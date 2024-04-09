@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true">
+  <div>
+<!--    <ion-title>Bienvenu</ion-title>-->
+    <h1>Créer un compte</h1>
+  </div>
+
+  <form>
+    <div cmasse="ion-padding">
+      <ion-item>
+        <ion-input placeholder="Nom" required></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Adresse mail" required></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Mot de passse" required></ion-input>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-item>
+    </div>
+
+
+    <div style="padding-left: 25%">
+      <p>Déjà membre ?<a [routerLink]="['/login']"> Se connecter</a></p>
+    </div>
+    <div>
+      <ion-fab vertical="bottom" horizontal="end" style="marigin-bottom: 30px">
+        <ion-fab-button [routerLink]="['/home']">
+          <ion-icon name="chevron-forward"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </div>
+  </form>
+</ion-content>
